@@ -32,7 +32,6 @@ class ParkingsController < ApplicationController
   end
 
   def list
-    byebug
     plates = Plate.where(plate: params[:plate]).first
     if plates
       parking_records = plates.parking_records

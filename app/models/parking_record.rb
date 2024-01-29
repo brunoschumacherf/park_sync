@@ -10,7 +10,6 @@ class ParkingRecord
 
   def self.map_parking_records(parking_records)
     parking_records.map do |parking_record|
-      byebug
       {
         id: parking_record.id.to_s,
         paid: parking_record.paid,
